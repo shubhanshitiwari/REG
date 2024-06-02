@@ -18,14 +18,17 @@ body {
     max-width: 90%;
     margin: 0 auto;
  }
-.LAST{
+ .LAST{
     margin-top: 0.5REM;
     text-align: center;
 }
 .DIS{
     text-align: center;
+    
 }
-.PART{ margin: 1.5rem;}
+.PART{ margin:2rem;
+    margin-top: 0;
+padding: 0, 2rem,0,2rem;}
 .sp{
     display: flex;
     flex-wrap: wrap;

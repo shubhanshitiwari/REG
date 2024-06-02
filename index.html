@@ -18,16 +18,16 @@
         </div>
         <ul class="nav-list">
             <li>
-                <a  class="blink" href="#home">Home</a>
+                <a style="font-weight: 700;" class="blink" href="#home">Home</a>
             </li>
             <li>
-                <a class="blink" href="#">Speakers</a>
+                <a class="blink" style="font-weight: 700;" href="#speaker">Speakers</a>
             </li>
             <li>
-                <a class="blink" href="#stream">Schedule</a>
+                <a class="blink" style="font-weight: 700;" href="#schedule">Schedule</a>
             </li>
             <li>
-                <a class="blink " href="#stream">JOIN US</a>
+                <a class="blink " href="#join">JOIN US</a>
             </li>
         </ul>
     </nav>
@@ -100,14 +100,18 @@
             
             <label for="expectation">What is your expectation from the event?</label>
             <textarea id="expectation" name="expectation" required></textarea>
-            <label for="updates"><input type="checkbox" id="updates" name="updates">
+            <input type="checkbox" id="updates" name="updates"><label for="updates">
                 Do you want to get updates in future about events conducted by E-Cell RGPV?</label>
             
             <button type="submit" onclick="showAlert()">Register</button>
         </form>
-        <!-- <div id="confirmation-message">
-            <p>Thank you for registering! Your spot at the event has been reserved.</p>
-        </div> -->
+        <script>
+            function confirmSubscription() {
+                if (document.getElementById('updates').checked) {
+                   widows.alert('Confirmation: You have subscribed to future updates about events conducted by E-Cell RGPV.');
+                }
+            }
+        </script>
     </div>
     <script src="script.js"></script>
     <p class="end">©Copyright Reserved@shubhanshi</p>

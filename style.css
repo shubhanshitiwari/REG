@@ -195,7 +195,7 @@ footer h3{
     box-shadow: 10px 4px #8f00ab;
     transition: 0.3s;}
 
-.button1,button{
+.button1{
     padding: 7px 16px;
     margin: 0.75rem ;
     border: 2px solid black;
@@ -203,6 +203,7 @@ footer h3{
     color: var(--second-color);
     font-weight: 700;
     text-decoration: none;
+    text-align:center;
 }
 .button1:hover{
     color: #7b0094;
